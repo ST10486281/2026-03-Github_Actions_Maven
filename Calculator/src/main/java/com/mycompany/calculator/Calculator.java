@@ -1,14 +1,12 @@
 
-
 package com.mycompany.calculator;
-
 
 public class Calculator {
 
-    //methods for functionality
-    
-    //Learning how to do Automated unit testing
-    
+    // methods for functionality
+
+    // Learning how to do Automated unit testing
+
     public int add(int a, int b) {
         return a + b;
     }
@@ -22,7 +20,8 @@ public class Calculator {
     }
 
     public double divide(double a, double b) {
-        if (b == 0) throw new IllegalArgumentException("Cannot divide by zero");
+        if (b == 0)
+            throw new IllegalArgumentException("Cannot divide by zero");
         return a / b;
     }
 }
