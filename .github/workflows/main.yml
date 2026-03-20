@@ -18,12 +18,12 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '25'
-        distribution: 'temurin'
+        distribution: 'temurin  '
 
     - name: Build with Maven
-      working-directory: Calculator
+      working-directory: .
       run: mvn clean install
 
     - name: Run tests
-      working-directory: Calculator
+      working-directory: .
       run: mvn test
